@@ -213,7 +213,7 @@ if [ "$BUILD_TYPE" == "default" ] || [ "$BUILD_TYPE" == "default-Werror" ] || [ 
 ### NOTE: Manual edit
 case "$CI_CZMQ_VER" in
 3)
-        $CI_TIME git clone --quiet -b v3.0.2 --depth 1 https://github.com/42ity/czmq.git czmq
+        $CI_TIME git clone --quiet --depth 1 -b v3.0.2 https://github.com/42ity/czmq.git czmq
 ;;
 4|*)
         $CI_TIME git clone --quiet --depth 1 https://github.com/zeromq/czmq.git czmq
